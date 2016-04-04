@@ -1,0 +1,134 @@
+<resources>
+    <string name="action_refresh">Atualizar</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_renew_selected">Renovar selecionados</string>
+    <string name="action_renew_all">Renovar todos</string>
+    <string name="app_name">Never Forget</string>
+    <string name="loading_books_message">Atualizando...</string>
+    <string name="book_author">Autor:</string>
+    <string name="book_title">Título:</string>
+    <string name="return_date_string">Devolver no dia </string>
+    <string name="trying_connection">Conectando… </string>
+    <string name="dialog_connection_failure_message">Não foi possível conectar ao servidor.
+    Tente novamente mais tarde.
+    </string>
+    <string name="dialog_connection_failure_title">Falha de conexão</string>
+    <string name="lsa_hint_username">Número USP</string>
+    <string name="lsa_hint_password">Senha</string>
+    <string name="lsa_login_button">Login</string>
+
+    <string name="dialog_login_failure_title">Falha de autenticação</string>
+    <string name="dialog_login_failure_message">Nome de usuário incorreto ou senha incorreta. Tente novamente.</string>
+
+    <string name="dialog_retrieve_session_web_page_failure_title">Falha de conexão!</string>
+    <string name="dialog_retrieve_session_web_page_failure_message">O servidor não respondeu de forma esperada. Desculpe pelo incoveniente. Tente novamente mais tarde.</string>
+
+    <string name="dialog_ok_button">OK</string>
+    <string name="nfa_renew_selected_button">Renovar Selecionados</string>
+    <string name="nfa_renew_all_button">Renovar Todos</string>
+    <string name="nfa_updated">Livros atualizados</string>
+    <string name="nfa_update_failed">Falha na atualização</string>
+    <string name="nfa_renewed">Livros renovados</string>
+    <string name="nfa_renew_failed">Não foi possível renovar os livros</string>
+    <string name="nfa_content_description">Ícone de um Livro qualquer</string>
+    <string name="nfa_book_added">Item adicionado a lista de renovação</string>
+    <string name="nfa_book_removed">Item removido da lista de renovação</string>
+    <string name="nfa_logout_dialog_yes_button">Sim</string>
+    <string name="nfa_logout_dialog_no_button">Não</string>
+    <string name="nfa_logout_dialog_message">"Tem certeza que deseja sair?
+        Seus dados serão perdidos."</string>
+    <string name="nfa_logout_dialog_title">Atenção</string>
+
+    <string name="title_activity_never_forget_settings">Configurações</string>
+
+    <!-- Strings related to Settings -->
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Dados &amp; sincronização</string>
+
+    <string name="pref_title_sync_frequency">Frequência de sincronização</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notificações</string>
+    <string name="pref_title_enable_notifications">Habilitar Notificações</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silencioso</string>
+
+    <string name="pref_title_vibrate">Vibrar</string>
+    <string name="preference_file_key">shared_prefs</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Configurações</string>
+    <string name="pref_notifications_category">Notificações</string>
+    <string name="pref_sync_title">Sincronização</string>
+    <string name="title_activity_about">Sobre</string>
+    <string name="action_about">Sobre</string>
+    <string name="author">Desenvolvido por Marcello Costa</string>
+    <string name="app_version">Versão 1.0</string>
+    <string name="author_github">https://github.com/travoul</string>
+    <string name="developer_aux">Desenvolvido por:</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="action_help">Ajuda</string>
+    <string name="howtorenew_string">Como renovar</string>
+    <string name="howtonotification_string">Notificações</string>
+    <string name="howtorenew_text">"    Para renovar um ou mais livros, selecione-os com um toque sobre  o livro desejado. Note que o fundo terá sua cor modificada e uma mensagem lhe dirá que o livro foi adicionado à lista de renovação.
+
+    Após ter selecionado todos os livros que deseja renovar, clique no botão \"Renovar Selecionados\".
+
+        Uma caixa de diálogo perguntando se realmente deseja continuar com a operação será exibida. Clique \"Sim\" para continuar ou \"Não\" para cancelar e voltar à página de seleção"</string>
+    <string name="help_notifications_text">"Você somente será notificado se tiver habilitado a opção \"Habilitar Notificações\" no painel de configurações e tiver configurado pelo menos um dos três possíveis horários personalizados.
+    Obs.: Para habilitar um horário personalizado, habilite o \"Horário Personalizado X\" e em seguida defina um horário para ser notificado.
+
+        As notificações serão emitidas na data anterior à de devolução, na data de devolução e sempre que um empréstimo estiver expirado.
+    Para identificar se um empréstimo está prestes à expirar, basta verificar se a cor do livro mostrado está vermelha.
+
+    Para identificar se um empréstimo está espirado, basta verificar se a cor do livro mostrado é azul e contém um texto em vermelho com os dizeres \"EXPIRED\""</string>
+    <string name="help_activity_title">Ajuda</string>
+    <string name="nfa_no_books_renewed">Nenhum livro foi renovado. Você pode estar impedido, os livros selecionados podem estar reservados ou você já atingiu o limite de renovações dos livros</string>
+    <string name="nfa_renew_at_least_one_selected">Não foi possível renovar todos os livros selecionados</string>
+    <string name="nfa_renew_at_least_one">Não foi possível renovar todos os livros</string>
+    <string name="nfa_renew_selected_question">Tem certeza que deseja renovar os livros selecionados?</string>
+    <string name="nfa_renew_all_question">Tem certeza que deseja renovar todos os livros?</string>
+    <string name="acknowledgements">"Agrecimentos:
+        Jonathan Hedley da Jsoup por disponibilizar uma ferramenta de análise incrível (http://jsoup.org/)
+
+        Ícones da Google (https://design.google.com/icons/)
+
+        Slidenerd por disponibilizar tutoriais e vídeos muito informativos sobre desenvolvimento de software para android (https://www.youtube.com/user/slidenerd)
+
+        The GIMP Team pela ferramenta de manipulação de imagens (https://www.gimp.org/)
+        "</string>
+    <string name="dialog_empty_field_title">Campo vazio</string>
+    <string name="dialog_empty_field_message">Você deixou o campo de usuário ou de senha em branco. Preencha corretamente ambos</string>
+
+
+    <!-- Help Activity -->
+    <!-- Headers -->
+    <string-array name="help_headers">
+        <item>Como renovar</item>
+        <item>Notificações</item>
+    </string-array>
+
+    <string-array name="help_notifications_when">
+        <item>Situações onde serão emitidas notificações:</item>
+        <item>Dia anterior à data de expiração de um empréstimo</item>
+        <item>No dia da expiração de um empréstimo</item>
+        <item>Sempre que um empréstimo estiver expirado</item>
+    </string-array>
+</resources>

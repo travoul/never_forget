@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_notifications_category">
+        <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="enable_notifications"
+            android:title="@string/pref_title_enable_notifications" />
+
+        <!-- Allows the user to choose a ringtone in the 'notification' category. -->
+        <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+        <!-- NOTE: RingtonePreference's summary should be set to its value by the activity code. -->
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="enable_notifications"
+            android:key="notification_ringtone"
+            android:ringtoneType="notification"
+            android:title="@string/pref_title_ringtone" />
+
+        <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="enable_notifications"
+            android:key="notifications_vibrate"
+            android:title="@string/pref_title_vibrate" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="enable_notifications"
+            android:key="enable_custom_timer1"
+            android:title="Habilitar horário personalizado 1" />
+
+        <mchs.neverforget.preferences.TimePickerPreference
+            android:defaultValue="07:00"
+            android:dependency="enable_custom_timer1"
+            android:key="notification_time_picker1"
+            android:title="Escolher horário 1" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="enable_notifications"
+            android:key="enable_custom_timer2"
+            android:title="Habilitar horário personalizado 2" />
+
+        <mchs.neverforget.preferences.TimePickerPreference
+            android:defaultValue="12:00"
+            android:dependency="enable_custom_timer2"
+            android:key="notification_time_picker2"
+            android:title="Escolher horário 2" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="enable_notifications"
+            android:key="enable_custom_timer3"
+            android:title="Habilitar horário personalizado 3" />
+
+        <mchs.neverforget.preferences.TimePickerPreference
+            android:defaultValue="20:00"
+            android:dependency="enable_custom_timer3"
+            android:key="notification_time_picker3"
+            android:title="Escolher horário 3" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_sync_title">
+        <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+        <ListPreference
+            android:defaultValue="24"
+            android:entries="@array/pref_sync_frequency_titles"
+            android:entryValues="@array/pref_sync_frequency_values"
+            android:key="sync_frequency"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_sync_frequency" />
+    </PreferenceCategory>
+</PreferenceScreen>

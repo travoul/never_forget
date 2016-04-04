@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_refresh"
+        android:onClick="updateBooks"
+        android:title="@string/action_refresh"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_renew_selected"
+        android:icon="@drawable/ic_check"
+        android:onClick="renewSelectedBooks"
+        android:title="@string/action_renew_selected"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_renew_all"
+        android:icon="@drawable/ic_check_all"
+        android:onClick="renewAllBooks"
+        android:title="@string/action_renew_all"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_dots_vertical"
+        android:onClick="startSettingsActivity"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_help"
+        android:onClick="startHelpActivity"
+        android:title="@string/action_help"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:onClick="startAboutActivity"
+        android:title="@string/action_about"
+        app:showAsAction="never" />
+
+</menu>
